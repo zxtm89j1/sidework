@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import '../App.css';
 import signIn from '../images/sign-in.svg'
 
+const retrieveUser = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [];
+
 const SignUp = () => {
 
 
@@ -17,6 +19,7 @@ const SignUp = () => {
     const [errorPassword, seterrorPassword] = useState(false);
     const [agree, setAgree] = useState(false);
     const [errorAgree, setErrorAgree] = useState('');
+
     
 
     //function for changing the state of the checkbox (terms and conditions)
@@ -24,6 +27,8 @@ const SignUp = () => {
         setAgree(!agree);
         console.log(agree)
     }
+
+
 
 
     const submitSignUp = (e) => {
@@ -37,12 +42,11 @@ const SignUp = () => {
 
             if(fName.trim() === '') {
                 seterrorfName('First name must not be empty!')
-            } else {
-                let i;
-                for (i = 0; i < fName.length; i++) {
-                    localStorage.setItem('first_name', fName)
-                }
-            }
+            } 
+            
+            // else {
+            //    localStorage.setItem('fName', JSON.stringify(fName))
+            // }
         }
 
         //function for validation of last name
@@ -50,9 +54,11 @@ const SignUp = () => {
             e.preventDefault();
             if(lName.trim() === '') {
                 seterrorlName('Last name must not be empty!')
-            } else {
-                localStorage.setItem('lName', lName)
-            }
+            } 
+            
+            // else {
+            //     localStorage.setItem('lName', JSON.stringify(lName))
+            // }
         }
 
 
@@ -61,9 +67,10 @@ const SignUp = () => {
             e.preventDefault();
             if(email.trim() === '') {
                 seterrorEmail('Email must not be empty!')
-            } else {
-                localStorage.setItem('email', email)
-            }
+            } 
+            // else {
+            //     localStorage.setItem('email', JSON.stringify(email))
+            // }
         }
 
         //function for validation of password
@@ -77,9 +84,10 @@ const SignUp = () => {
                 seterrorPassword('Password must be minimum of 5 characters!')
             } else if (password.search(/[0-9]/) < 0) {
                 seterrorPassword('Password must contain at least one number!')
-            } else if (password === password2) {
-                localStorage.setItem('password', password)
-            } 
+            }
+            //  if (password === password2) {
+            //     localStorage.setItem('password', JSON.stringify(password))
+            // } 
         }
 
         
@@ -87,10 +95,14 @@ const SignUp = () => {
         const handleSubmitAgreement = () => {
             if (agree === false) {
                 setErrorAgree('You must agree to the terms and conditions!')
-            } else {
-                localStorage.setItem('agreed', 'agreed')
-            }
+            } 
+            
+            // else {
+            //     localStorage.setItem('agreed?', 'agreed')
+            // }
         }
+
+      
 
 
 
@@ -98,19 +110,27 @@ const SignUp = () => {
         const toggleModal = () => {
             if (fName !== '' && lName !== '' && email !== '' && password === password2 && agree === true) {
                 alert('Yehey. Proceed sa next step di na ka mastress!')
-            } else {
+
+                let users = {
+                    fName: fName,
+                    lName: lName,
+                    email: email,
+                    password: password,
+                    password2: password2
+                }
+
+                retrieveUser.push(users);
+                localStorage.setItem('users', JSON.stringify(retrieveUser));
+
+                console.log(retrieveUser);
+
+            } 
+            
+            else {
                 alert('There are errors! Please double check the fields!')
             }
         }
-    
-
-
-
-
-
-
-
-        
+            
         //calling functions
         handleSubmitFname();
         handleSubmitLname();
@@ -118,6 +138,7 @@ const SignUp = () => {
         handleSubmitPassword();
         handleSubmitAgreement();
         toggleModal();
+       
 
 
 
@@ -150,8 +171,9 @@ const SignUp = () => {
                         <div className='form-row'><label>Retype Password:</label><br />
                         <input type='password' className='input1'  onChange={(e) => setPassword2(e.target.value)}/></div>
 
-                        <div className='mainDivCheckbox'><input type='checkbox' onChange={checkboxHandler}/><label for='checkbox'>Agree to the terms and conditions</label>{agree ? (null) : (<span className='errorSpan'>{errorAgree}</span>)}</div>
-
+                        <div className='mainDivCheckbox'><input type='checkbox' onChange={checkboxHandler}/><label for='checkbox'>Agree to the terms and conditions</label></div>
+                        <div className='mainDivCheckbox'>{agree ? (null) : (<span className='errorSpan'>{errorAgree}</span>)}</div>
+                        
                         <button type='submit'>Create my account</button>
                         <div><span>Already have an account? <a>Try logging in.</a></span></div>
 
