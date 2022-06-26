@@ -18,15 +18,15 @@ import profile6 from '../images/profilePic/Profile6.svg';
 import profile7 from '../images/profilePic/Profile7.svg';
 import profile8 from '../images/profilePic/Profile8.svg';
 import profile9 from '../images/profilePic/Profile9.svg';
-import Profile1 from './Profile1.js'
-import Profile2 from './Profile2.js'
-import Profile3 from './Profile3.js'
-import Profile4 from './Profile4.js'
-import Profile5 from './Profile5.js'
-import Profile6 from './Profile6.js'
-import Profile7 from './Profile7.js'
-import Profile8 from './Profile8.js'
-import Profile9 from './Profile9.js'
+import Profile1 from './Profile1.js';
+import Profile2 from './Profile2.js';
+import Profile3 from './Profile3.js';
+import Profile4 from './Profile4.js';
+import Profile5 from './Profile5.js';
+import Profile6 from './Profile6.js';
+import Profile7 from './Profile7.js';
+import Profile8 from './Profile8.js';
+import Profile9 from './Profile9.js';
 
 const Categories = () => {
   return (
@@ -48,8 +48,10 @@ const Categories = () => {
       <img style={{width:'30px', height:'30px', }} src={python} alt="" /></div>
       <div className='links'>
         <Profile1/>
-       </div> 
-    </div>
+
+      </div> 
+      </div>
+     
 
       {/* Profile 2 */}
       <div className='profileCards'>

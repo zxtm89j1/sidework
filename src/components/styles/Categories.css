@@ -1,0 +1,93 @@
+.categoriesBody {
+    width: 100vw;
+    height: 100vh;
+    background: no-repeat center / cover url(../images/wallpaper/wallpaperCategories2.svg);
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5%;
+    overflow: auto;
+}
+
+.categoriesBody .headertext {
+    background-color: rgba(165, 42, 42, 0.801);
+    padding: 15px;
+    border-radius: 0.25em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+}
+.categoriesBody .discriptiontext {
+    font-size: 1.75em;
+    background-color: rgba(165, 42, 42, 0.685);
+    padding: 10px;
+    border-radius: 0.25em;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 2em;
+}
+
+
+.Aboutus .sidewordtext {
+    font-family: 'Lobster Two',  cursive;
+    text-shadow: 10px 5px rgb(87, 119, 1);
+    background-color: rgba(103, 220, 119, 0.992);
+    border-radius: 50%;
+    height: 150px;
+    min-height: 100px;
+    width: 150px;
+    min-width: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 rgba(249, 201, 30, 0.706);
+    animation: pulse 2s infinite;
+    pointer-events: none;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 120px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 120px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 120px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+
+
+/*Pulsing*/
+
+@media screen and (max-width: 500px) {
+    .categoriesBody {
+        padding-top: 400px;
+    }
+
+    .categoriesBody .headertext {
+        font-size: 2em;
+    }
+
+    .categoriesBody .discriptiontext {
+        font-size: 1.5em;
+    }
+}
