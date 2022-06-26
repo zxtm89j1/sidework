@@ -32,8 +32,7 @@ import {UserAuth} from '../context/AuthContext'
         <div className="logo">
             <h2>sideWork</h2>
             <p>{ user?.displayName ? (<p>Hello, {user?.displayName}</p>) 
-            : 
-            (<p><Link to='/Signin'>Sign in</Link></p>) }</p>
+            : '' }</p>
                 <button onClick={() => {setExpandNavbar((prev) => !prev)}}>
                     <img src={menuIcon} alt='menu Icon'/>
                 </button>
