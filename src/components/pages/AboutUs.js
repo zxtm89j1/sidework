@@ -4,87 +4,88 @@ import profile_logo from '../images/Aboutus/ProfileLogo.svg';
 import github_logo from '../images/Aboutus/GithubLogo.svg';
 import gmail_logo from '../images/Aboutus/GmailLogo.svg';
 import linkedin_logo from '../images/Aboutus/LinkedinLogo.svg';
+import TJ from '../images/Aboutus/TJGimenez.png';
 import '../styles/Aboutus.css'
 
 const AboutUs = () => {
   return (
     <div className='Aboutus' >
         <h1 className='sidewordtext' >sideWork</h1>
-        <p className='aboutustext' >About us.</p>
+        <p className='aboutustext' >More About Us!</p>
 
     {/* Profile */}
     <div className='profilecard'>
-    {/* Profile 1 */}
+    {/* Profile 1 Niño */}
     <div className='profileCards1'>
       <div className='profile'> <img className='profileimg' src="https://image.kpopmap.com/2019/01/VERIVERY-Faceus-member-profile-YongSeung.jpg"  alt="" /> </div>
-      <div className='name'>Kim Teahyung</div>
-      <div className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet amet fugit similique</div>
+      <div className='name'>Niño Ancheta</div>
+      <div className='description'>A full stack developer always eager to learn!</div>
       <div className='links'>
-        <div className='Profilelogo'> <a href="https://github.com/Anchetanino">  
+        <div className='Profilelogo'> <a href="https://github.com/Anchetanino" target="_blank" rel="noopener noreferrer">  
           <Tooltip title="Portfolio">
              <button> <img src={profile_logo} alt="Profile logo"/> </button>
           </Tooltip> </a>  </div>
-        <div className='Githublogo'><a href="https://github.com/Anchetanino">
+        <div className='Githublogo'><a href="https://github.com/Anchetanino" target="_blank" rel="noopener noreferrer">
           <Tooltip title="Github">
             <button> <img src={github_logo} alt="Github logo"/> </button>
           </Tooltip> </a> </div>
-        <div className='Gmaillogo'><a href="https://github.com/Anchetanino"> 
+        <div className='Gmaillogo'><a href="mailto:" target="_blank" rel="noopener noreferrer"> 
           <Tooltip title="Email">
             <button> <img src={gmail_logo} alt="Gmail logo"/> </button>
           </Tooltip> </a> </div>
-        <div className='LinkedInlogo'><a href="https://github.com/Anchetanino">
+        <div className='LinkedInlogo'><a href="https://github.com/Anchetanino" target="_blank" rel="noopener noreferrer">
           <Tooltip title="LinkedIn"> 
             <button> <img src={linkedin_logo} alt="Linkedin logo"/> </button>
           </Tooltip>  </a></div>
      </div> 
     </div>
 
-    {/* Profile 2 */}
+    {/* Profile 2 Spencer*/}
     <div className='profileCards2'>
       <div className='profile'> <img className='profileimg' src="https://image.kpopmap.com/2019/01/VERIVERY-Faceus-member-profile-YongSeung.jpg"  alt="" /> </div>
-      <div className='name'>Kim Teahyung</div>
-      <div className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet amet fugit similique</div>
+      <div className='name'>Spencer Bohol</div>
+      <div className='description'>A full stack developer always eager to learn!</div>
 
       <div className='links'>
-        <div className='Profilelogo'> <a href="https://github.com/Anchetanino">  
+        <div className='Profilelogo'> <a href="https://github.com/Anchetanino" target="_blank" rel="noopener noreferrer">  
           <Tooltip title="Portfolio">
              <button> <img src={profile_logo} alt="Profile logo"/> </button>
           </Tooltip> </a>  </div>
-        <div className='Githublogo'><a href="https://github.com/Anchetanino">
+        <div className='Githublogo'><a href="https://github.com/Anchetanino" target="_blank" rel="noopener noreferrer">
           <Tooltip title="Github">
             <button> <img src={github_logo} alt="Github logo"/> </button>
           </Tooltip> </a> </div>
-        <div className='Gmaillogo'><a href="https://github.com/Anchetanino"> 
+        <div className='Gmaillogo'><a href="mailto:" target="_blank" rel="noopener noreferrer"> 
           <Tooltip title="Email">
             <button> <img src={gmail_logo} alt="Gmail logo"/> </button>
           </Tooltip> </a> </div>
-        <div className='LinkedInlogo'><a href="https://github.com/Anchetanino">
+        <div className='LinkedInlogo'><a href="https://github.com/Anchetanino" target="_blank" rel="noopener noreferrer">
           <Tooltip title="LinkedIn"> 
             <button> <img src={linkedin_logo} alt="Linkedin logo"/> </button>
           </Tooltip>  </a></div>
      </div> 
     </div>
 
-    {/* Profile 3 */}
+    {/* Profile 3 TJ */}
     <div className='profileCards3'>
-      <div className='profile'> <img className='profileimg' src="https://image.kpopmap.com/2019/01/VERIVERY-Faceus-member-profile-YongSeung.jpg"  alt="" /> </div>
-      <div className='name'>Kim Teahyung</div>
-      <div className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet amet fugit similique</div>
+      <div className='profile'> <img className='profileimg' src={TJ}  alt="TJ Gimenez" /> </div>
+      <div className='name'>TJ Gimenez</div>
+      <div className='description'>A full stack developer always eager to learn!</div>
 
       <div className='links'>
-        <div className='Profilelogo'> <a href="https://github.com/Anchetanino">  
+        <div className='Profilelogo'> <a href="https://tj0023.github.io/My-Portfolio/" target="_blank" rel="noopener noreferrer">  
           <Tooltip title="Portfolio">
              <button> <img src={profile_logo} alt="Profile logo"/> </button>
           </Tooltip> </a>  </div>
-        <div className='Githublogo'><a href="https://github.com/Anchetanino">
+        <div className='Githublogo'><a href="https://github.com/TJ0023" target="_blank" rel="noopener noreferrer">
           <Tooltip title="Github">
             <button> <img src={github_logo} alt="Github logo"/> </button>
           </Tooltip> </a> </div>
-        <div className='Gmaillogo'><a href="https://github.com/Anchetanino"> 
+        <div className='Gmaillogo'><a href="mailto:GimenezTJV@gmail.com" target="_blank" rel="noopener noreferrer"> 
           <Tooltip title="Email">
             <button> <img src={gmail_logo} alt="Gmail logo"/> </button>
           </Tooltip> </a> </div>
-        <div className='LinkedInlogo'><a href="https://github.com/Anchetanino">
+        <div className='LinkedInlogo'><a href="https://www.linkedin.com/in/tristan-jay-gimenez-501509243/" target="_blank" rel="noopener noreferrer">
           <Tooltip title="LinkedIn"> 
             <button> <img src={linkedin_logo} alt="Linkedin logo"/> </button>
           </Tooltip>  </a></div>

@@ -20,27 +20,47 @@ import profile7 from '../images/profilePic/Profile7.svg';
 import profile8 from '../images/profilePic/Profile8.svg';
 import profile9 from '../images/profilePic/Profile9.svg';
 import Profile1 from '../Profile1.js'
+import '../styles/Categories.css'
 
 
 const Categories = () => {
   return (
-    <div style={{backgroundColor: '#3AAFA9', marginTop:'7%'}} >
-        <h1 className='headertext' style={{color: 'white', fontSize: '75px' }}>Hire the best developers.</h1>
-        <p className='discriptiontext' style={{color: 'white',fontSize: '30px' }}>Check out developers with the skills you need for your next job. </p>
-    <div>
+    <div className='categoriesBody'>
+      <div>
+        <h1 className='headertext'>Hire The Best For You!</h1>
+        <p className='discriptiontext'>Check out developers with the skills you need for your next job!</p>
+      <div>
     <div className='profilecard'>
+
     {/* Profile 1 */}
-    <div className='profileCards1'>
+      <div className='profileCards1'>
       <div className='profile'> <img src={profile1} alt="" style={{width:'150px', height:'150px'}}/></div>
-      <div className='name' style={{fontSize:'20px'}}>Kim Teahyung</div>
+      <div className='name' style={{fontSize:'20px'}}>John Doe</div>
       <div style={{fontSize:'12px'}}>Junior Engineer</div>
-    <div><img src={star} alt="" style={{width:'30px', height:'30px', }}/><img src={star} alt="" style={{width:'30px', height:'30px', }}/><img src={star} alt="" style={{width:'30px', height:'30px', }}/><img src={star} alt="" style={{width:'30px', height:'30px', }}/><img src={star} alt="" style={{width:'30px', height:'30px', }}/></div>
+      <div><img src={star} alt="" style={{width:'30px', height:'30px', }}/><img src={star} alt="" style={{width:'30px', height:'30px', }}/><img src={star} alt="" style={{width:'30px', height:'30px', }}/><img src={star} alt="" style={{width:'30px', height:'30px', }}/><img src={star} alt="" style={{width:'30px', height:'30px', }}/></div>
       <div className='skills'> <p>Technologies:</p> <img src="" alt="" /> <img src="" alt="" /> <img src="" alt="" /> <img src="" alt="" /></div>
       <div className='links'>
         <Profile1/>
-       </div> 
+
+      </div> 
+      </div>
+        {/* Profile 6 */}
+      <div className='profileCards1'>
+      <div className='profile'> <img src={profile6} alt="" style={{width:'150px', height:'150px'}}/></div>
+      <div className='name' style={{fontSize:'20px'}}>Jonathan Doe</div>
+      <div style={{fontSize:'12px'}}>Junior Engineer</div>
+      <div><img src={star} alt="" style={{width:'30px', height:'30px', }}/><img src={star} alt="" style={{width:'30px', height:'30px', }}/><img src={star} alt="" style={{width:'30px', height:'30px', }}/><img src={star} alt="" style={{width:'30px', height:'30px', }}/><img src={star} alt="" style={{width:'30px', height:'30px', }}/></div>
+      <div className='skills'> <p>Technologies:</p> <img src="" alt="" /> <img src="" alt="" /> <img src="" alt="" /> <img src="" alt="" /></div>
+      <div className='links'>
+        <Profile1/>
+
+      </div> 
+      </div>
+      
+
+      
     </div>
-</div>
+    </div>
     </div>
     </div>
   )

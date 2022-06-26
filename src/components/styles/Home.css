@@ -66,7 +66,7 @@
   .subScreen1 h2 {
     font-family: 'Lobster Two',  cursive;
     text-shadow: 10px 5px rgb(87, 119, 1);
-    background-color: rgba(0, 106, 14, 0.992);
+    background-color: rgba(3, 74, 13, 0.992);
     border-radius: 50%;
     height: 150px;
     min-height: 100px;
@@ -126,18 +126,18 @@
   .personaDisplay {
     background-color: rgba(10, 32, 91, 0);
     place-items: center;
-	padding: 1rem;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	grid-column-gap: 0rem;
-	grid-row-gap: 0rem;
-	flex-wrap: wrap;
-	overflow: scroll;
-	height: 40%;
+	  padding: 1rem;
+	  display: grid;
+	  grid-template-columns: repeat(3, 1fr);
+	  grid-template-rows: repeat(3, 1fr);
+	  grid-column-gap: 0rem;
+	  grid-row-gap: 0rem;
+	  flex-wrap: wrap;
+	  overflow: scroll;
+	  height: 40%;
     width: 75%;
-	scroll-snap-type: both mandatory;
-	scroll-padding: 10rem;
+	  scroll-snap-type: both mandatory;
+	  scroll-padding: 10rem;
   }
 
   .personaDisplay::-webkit-scrollbar {
