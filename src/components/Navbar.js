@@ -42,11 +42,7 @@ import {UserAuth} from '../context/AuthContext'
             <Link className="hover" to="/">Home</Link>
             <Link className="hover" to="/AboutUs">About Us</Link>
             <Link className="hover" to="/Categories">Categories</Link>
-            <Link  className="hover" to="/LogIn">Log In</Link>
-            <Link  className="hover" to="/SignUp">Sign Up</Link>
-
             <Link  className="hover" to="/Account">Account</Link>
-
             { user?.displayName ? (<button className='buttonLogOut' onClick={handleSignOut}>Logout</button>) 
             : 
             ( <>
