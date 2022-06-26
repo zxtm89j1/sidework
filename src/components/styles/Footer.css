@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
+
+
+.footer {
+    width: 100%;
+    height: 140px;
+    background: #00514d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer p {
+    color: white;
+    font-size: 1.5vh;
+  }
+
+  .footer h2 {
+    font-family: 'Lobster Two',  cursive;
+    color: white;
+  }
+  .footer span {
+    font-family: 'Lobster Two',  cursive;
+    font-size: 3vh;
+  }
+
+  .footerSocials {
+    background-color: #08b04e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0em 0em 10em 0em;
+    text-align: left;
+  }
+  
+  .footerAbout {
+    background-color: #00514d;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  @media only screen and (max-width: 400px) {
+    .footer p {
+        font-size: 1vh;
+      }
+      .footer span {
+        font-size: 2vh;
+      }
+  }

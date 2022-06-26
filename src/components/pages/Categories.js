@@ -1,6 +1,5 @@
 import React from 'react'
-import profile1 from '../images/Profile1.svg'
-import star from '../images/Star.svg'
+import star from '../images/TechLogo/Star.svg'
 import js from '../images/TechLogo/Javascriptlogo.svg'
 import java from '../images/TechLogo/Javalogo.svg'
 import bootstrap from '../images/TechLogo/Bootstraplogo.svg'
@@ -11,12 +10,21 @@ import html from '../images/TechLogo/HTMLlogo.svg'
 import python from '../images/TechLogo/Pythonlogo.svg'
 import reactjs from '../images/TechLogo/Reactjslogo.svg'
 import vb from '../images/TechLogo/VBlogo.svg'
-import Profile1 from './Profile1.js'
+import profile1 from '../images/profilePic/Profile1.svg';
+import profile2 from '../images/profilePic/Profile2.svg';
+import profile3 from '../images/profilePic/Profile3.svg';
+import profile4 from '../images/profilePic/Profile4.svg';
+import profile5 from '../images/profilePic/Profile5.svg';
+import profile6 from '../images/profilePic/Profile6.svg';
+import profile7 from '../images/profilePic/Profile7.svg';
+import profile8 from '../images/profilePic/Profile8.svg';
+import profile9 from '../images/profilePic/Profile9.svg';
+import Profile1 from '../Profile1.js'
 
 
 const Categories = () => {
   return (
-    <div style={{backgroundColor: '#3AAFA9'}} >
+    <div style={{backgroundColor: '#3AAFA9', marginTop:'7%'}} >
         <h1 className='headertext' style={{color: 'white', fontSize: '75px' }}>Hire the best developers.</h1>
         <p className='discriptiontext' style={{color: 'white',fontSize: '30px' }}>Check out developers with the skills you need for your next job. </p>
     <div>

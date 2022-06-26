@@ -1,10 +1,10 @@
 import React from 'react';
 import Tooltip from '@mui/material/Tooltip'
-import profile_logo from '../images/ProfileLogo.svg';
-import github_logo from '../images/GithubLogo.svg';
-import gmail_logo from '../images/GmailLogo.svg';
-import linkedin_logo from '../images/LinkedinLogo.svg';
-import '../css/Aboutus.css'
+import profile_logo from '../images/Aboutus/ProfileLogo.svg';
+import github_logo from '../images/Aboutus/GithubLogo.svg';
+import gmail_logo from '../images/Aboutus/GmailLogo.svg';
+import linkedin_logo from '../images/Aboutus/LinkedinLogo.svg';
+import '../styles/Aboutus.css'
 
 const AboutUs = () => {
   return (

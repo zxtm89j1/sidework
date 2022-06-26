@@ -1,0 +1,263 @@
+/*Sign Up Form*/
+
+.signUpMain
+.sign-up-body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+.signUpMain
+.form-maindiv * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.signUpMain
+.nav-signup {
+  background-color: #2B7A78;
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 10vh;
+  padding: 1%;
+}
+.signUpMain
+.main1 {
+  position: relative;
+}
+.signUpMain
+.signup-body {
+  background-color: #3AAFA9;
+  padding-bottom: 50%;
+  padding: 10%;
+}
+.signUpMain
+.signup-body img {
+  width: 40%;
+}
+
+/* .form-row {
+  display: flex;
+  margin-top: 3%;
+  margin-bottom: 3%;
+} */
+
+.signUpMain
+.form-maindiv form {
+  background-color: #FEFFFF;
+  padding: 5vh;
+  box-shadow: 40px 40px #015D3C;
+  border-radius: 5%;
+}
+.signUpMain
+.form-maindiv button {
+  width: 100%;
+  font-size: 3vh;
+  padding: 2%;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #3AAFA9;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.signUpMain
+.form-maindiv button:hover {
+  background-color: #0bba54;
+  cursor: pointer;
+}
+
+.signUpMain
+.form-row {
+  margin-top: 3%;
+}
+.signUpMain
+.form-maindiv a {
+  color: #015D3C;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.signUpMain
+.form-row label {
+  font-size: 3vh;
+  font-family: 'Roboto Slab', serif;
+}
+
+.signUpMain
+.form-row input {
+  font-size: 3vh;
+  width: 100%;
+  padding: 1%;
+  font-family: 'Roboto Slab', serif;
+  margin-right: 5%;
+  
+}
+.signUpMain
+.form-maindiv span {
+  font-size: 2vh;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+
+
+
+.signUpMain
+.main-content {
+  display: flex;
+  padding: 1%;
+}
+.signUpMain
+.main-content h1 {
+  flex: 1;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 10vh;
+  margin: 0px 0px;
+}
+.signUpMain
+.main-content .form-maindiv {
+  flex: 1;
+}
+
+
+.signUpMain
+.mainDivCheckbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 3%;
+  
+}
+.signUpMain
+.mainDivCheckbox input {
+  margin-right: 5%;
+  font-size: 2vh;
+  color: #015D3C;
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.signUpMain
+.mainDivCheckbox label {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2vh;
+  
+}
+.signUpMain
+.errorSpan {
+  color: red;
+  margin-left: 1%;
+}
+
+@media screen and (max-width: 1024px) {
+    .signUpMain
+    .form-maindiv form .form-row label {
+      font-size: 2vh;
+  }
+
+  .signUpMain
+  .main-content > h1 {
+    font-size: 7vh;
+  }
+
+  .signUpMain
+  .form-maindiv form button {
+    font-size: 2vh;
+  }
+  .signUpMain
+  .form-maindiv form .input1 {
+    font-size: 2.5vh;
+  }
+  .signUpMain
+  .form-maindiv span, .form-maindiv a {
+    font-size: 1.5vh;
+  }
+  .signUpMain
+  .form-maindiv form {
+    padding: 10%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+    .signUpMain
+    .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+    .signUpMain
+  .form-maindiv form {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .signUpMain
+  .signup-body img {
+    width: 60%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .signUpMain
+  .main1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .signUpMain
+  .signup-body {
+    padding: 2%;
+  }
+  .signUpMain
+  .main-content h1 {
+    font-size: 5vh;
+  }
+  .signUpMain
+  .form-maindiv form {
+  background-color: #FEFFFF;
+  padding: 5vh;
+  box-shadow: 20px 20px #015D3C;  border-radius: 5%;
+}
+.signUpMain
+.mainDivCheckbox label {
+  font-size: 1.5vh;
+}
+.signUpMain
+.form-maindiv span, .form-maindiv a {
+  font-size: 1.5vh;
+}
+.signUpMain
+.form-maindiv button {
+  margin: 5% 0%;
+}
+
+}
+
+@media screen and (max-width: 427px) {
+    .signUpMain
+    .form-maindiv form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  }
+
+
+}
+
+
+@media screen and (max-width: 383px) {
+    .signUpMain
+    .form-maindiv form {
+    background-color: #FEFFFF;
+    padding: 5vh;
+    box-shadow: 0px 0px; border-radius: 5%;
+  }
+.signUpMain
+  .form-maindiv form {
+    padding: 10%;
+  }
+
+}
