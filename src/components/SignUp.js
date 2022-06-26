@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../App.css';
+import '../components/styles/SignUp.css';
 import signIn from './images/sign-in.svg'
 
 
@@ -136,7 +136,7 @@ const SignUp = () => {
    
   return (
 
-
+        <div className='signUpMain'>
         <div className='signup-body'>
         <div className='main1'>
             <div className='main-content'>
@@ -191,6 +191,7 @@ const SignUp = () => {
 
         </div>
 
+        </div>
         </div>
   )
 }

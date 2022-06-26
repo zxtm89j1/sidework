@@ -1,0 +1,37 @@
+.Login2Main {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: no-repeat center / cover url(../images/wallpaper/wallpaper2.svg);
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+}
+
+
+.Login2Main .googleButton h1 {
+    color: white;
+    background-color: rgb(154, 59, 198);
+    padding: 15px;
+    border-radius: 0.25em;
+    pointer-events: none;
+}
+.Login2Main .googleButton {
+    width: 90%;
+    max-width: 600px;
+    height: 60%;
+    display: flex;
+    background-color: rgb(255, 251, 225);
+    border-radius: 0.5em;
+    box-shadow: 20px 20px rgb(246, 208, 181);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5%;
+}
+
+.Login2Main .helloLog {
+    height: 40%;
+}
