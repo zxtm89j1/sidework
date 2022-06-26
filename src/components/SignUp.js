@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import '../App.css';
+import {Link} from 'react-router-dom';
+import './styles/SignUp.css';
 import signIn from '../images/sign-in.svg'
 
 const retrieveUser = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [];
@@ -148,7 +149,7 @@ const SignUp = () => {
 
   return (
 
-
+        <div className='signUpMain'>
         <div className='signup-body'>
         <div className='main1'>
             <div className='main-content'>
@@ -175,7 +176,7 @@ const SignUp = () => {
                         <div className='mainDivCheckbox'>{agree ? (null) : (<span className='errorSpan'>{errorAgree}</span>)}</div>
                         
                         <button type='submit'>Create my account</button>
-                        <div><span>Already have an account? <a>Try logging in.</a></span></div>
+                        <div><span>Already have an account? <Link to="/LogIn"><b>Try logging in.</b></Link></span></div>
 
                         
                     </form>
@@ -193,7 +194,7 @@ const SignUp = () => {
         </div>
 
 
-        
+        </div>        
   
   )
 }

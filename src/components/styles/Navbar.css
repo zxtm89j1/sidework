@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: #00514d;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin: 20px;
+    font-size: 1.75em;
+    width: 100%;
+  }
+
+ .logo h2{
+    font-family: 'Lobster Two',  cursive;
+    pointer-events: none;
+  }
+
+  .logo button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .links {
+    width: 50%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 1.5em;
+    font-size: 1.1em;
+  }
+  
+  #close {
+    transition: 0.3s ease-in-out;
+  }
+
+  #open {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color:  hsla(177, 100%, 16%, 0.9);
+    transition: 0.3s ease-in-out;
+  }
+  
+  #open .links {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+  }
+  
+  #open a {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #openLink {
+    display: flex;
+    transition: 0.3s ease-in-out;    
+  }
+
+  #closeLink {
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+  }
+  .hover {
+    transition: 0.1s ease-in-out
+  }
+  .hover:hover {
+    transition: 0.1s ease-in-out;
+    transform: scale(1.3);
+  }
+  @media only screen and (max-width: 900px) {
+    .navbar a {
+      width: 100px;
+    }
+  }
+  
+  @media only screen and (max-width: 1175px) {
+    .links {
+        transition: 0.3s ease-in-out;
+    }
+
+    .logo {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.5em;
+        transition: 0.3s ease-in-out;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logo button {
+        display: flex;
+        transition: 0.3s ease-in-out;
+
+    }
+  }
+
+  /* @media only screen and (max-width: 600px) {
+    .toggleButton {
+      display: flex;
+    }
+    #close a {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .toggleButton {
+      display: none;
+    }
+  
+    .hiddenLinks {
+      display: none;
+    }
+  
+    #open {
+      height: 100px;
+    }
+  
+    #open .links {
+      flex-direction: row;
+    }
+  } */

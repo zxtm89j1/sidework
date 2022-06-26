@@ -1,240 +1,33 @@
-.sign-up-body * {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-} 
-
-.form-maindiv * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  outline: 0px solid red;
 }
 
-.nav-signup {
-  background-color: #2B7A78;
-  color: white;
-  font-family: 'Lobster', cursive;
-  font-size: 10vh;
-  padding: 1%;
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-color: #009396;
+  overflow-x: hidden;
 }
 
-.main1 {
-  position: relative;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
 }
 
-.signup-body {
-  background-color: #3AAFA9;
-  padding-bottom: 50%;
-  padding: 10%;
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
 }
 
-.signup-body img {
-  width: 40%;
-}
-
-/* .form-row {
-  display: flex;
-  margin-top: 3%;
-  margin-bottom: 3%;
-} */
-
-
-.form-maindiv form {
-  background-color: #FEFFFF;
-  padding: 5vh;
-  box-shadow: 40px 40px #015D3C;
-  border-radius: 5%;
-}
-
-.form-maindiv button {
-  width: 100%;
-  font-size: 3vh;
-  padding: 1%;
-  border-radius: 100px;
-  border: none;
-  background-color: #3AAFA9;
-  color: white;
-}
-
-.form-row {
-  margin-top: 3%;
-}
-
-.form-maindiv a {
-  color: #015D3C;
-  font-weight: bold;
-  cursor: pointer;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 98, 62);
+  border-radius: 1em;
 }
 
 
-
-
-.form-row label {
-  font-size: 3vh;
-  font-family: 'Roboto Slab', serif;
-}
-
-.form-row input {
-  font-size: 3vh;
-  width: 100%;
-  padding: 1%;
-  font-family: 'Roboto Slab', serif;
-  margin-right: 5%;
-  
-}
-
-.form-maindiv span {
-  font-size: 2vh;
-  font-family: 'Roboto Slab', serif;
-}
-
-
-
-
-
-.main-content {
-  display: flex;
-  padding: 1%;
-}
-
-.main-content h1 {
-  flex: 1;
-  color: white;
-  font-family: 'Roboto Slab', serif;
-  font-size: 10vh;
-  margin: 0px 0px;
-}
-
-.main-content .form-maindiv {
-  flex: 1;
-}
-
-
-
-.mainDivCheckbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3% 3%;
-  
-}
-
-.mainDivCheckbox input {
-  margin-right: 5%;
-  font-size: 2vh;
-  color: #015D3C;
-}
-
-.mainDivCheckbox label {
-  font-family: 'Roboto Slab', serif;
-  font-size: 2vh;
-  
-}
-
-.errorSpan {
-  color: red;
-  margin-left: 1%;
-}
-
-@media screen and (max-width: 1024px) {
-  .form-maindiv form .form-row label {
-      font-size: 2vh;
-  }
-
-  .main-content > h1 {
-    font-size: 7vh;
-  }
-
-  .form-maindiv form button {
-    font-size: 2vh;
-  }
-
-  .form-maindiv form .input1 {
-    font-size: 1vh;
-  }
-
-  .form-maindiv span, .form-maindiv a {
-    font-size: 2vh;
-  }
-
-  .form-maindiv form {
-    padding: 10%;
-  }
-}
-
-@media screen and (max-width: 699px) {
-  .main-content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .form-maindiv form {
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
-
-  .signup-body img {
-    width: 60%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
-
-  .main1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .signup-body {
-    padding: 2%;
-  }
-
-  .main-content h1 {
-    font-size: 5vh;
-  }
-
-  .form-maindiv form {
-  background-color: #FEFFFF;
-  padding: 5vh;
-  box-shadow: 20px 20px #015D3C;  border-radius: 5%;
-}
-
-.mainDivCheckbox label {
-  font-size: 1.5vh;
-}
-
-.form-maindiv span, .form-maindiv a {
-  font-size: 1.5vh;
-}
-
-.form-maindiv button {
-  margin: 5% 0%;
-}
-
-}
-
-@media screen and (max-width: 427px) {
-  .form-maindiv form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  }
-
-
-}
-
-
-@media screen and (max-width: 383px) {
-  .form-maindiv form {
-    background-color: #FEFFFF;
-    padding: 5vh;
-    box-shadow: 0px 0px; border-radius: 5%;
-  }
-
-  .form-maindiv form {
-    padding: 10%;
-  }
-
-}
