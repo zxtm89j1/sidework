@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
+import '../components/styles/SignUp.css';
+import signIn from './images/sign-in.svg'
 import {Link} from 'react-router-dom';
-import '../App.css';
-import signIn from './images/sign-in.svg';
 
 
 const retrieveUser = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [];
@@ -137,7 +137,7 @@ const SignUp = () => {
    
   return (
 
-
+        <div className='signUpMain'>
         <div className='signup-body'>
         <div className='main1'>
             <div className='main-content'>
@@ -166,7 +166,7 @@ const SignUp = () => {
                         
                         
                         <button type='submit'>Create my account</button>
-                        <div className='aLogInMain'><span className='already'>Already have an account? <Link to="/LogIn"> <a class='aLogIn'>Try logging in.</a></Link></span></div>
+                        <div className='aLogInMain'><span className='already'>Already have an account? <Link to="/Signin"> <a className='aLogIn'>Try logging in.</a></Link></span></div>
 
                         
                     </form>
@@ -192,6 +192,7 @@ const SignUp = () => {
 
         </div>
 
+        </div>
         </div>
   )
 }

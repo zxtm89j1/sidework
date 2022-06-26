@@ -1,0 +1,32 @@
+.accountMain {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background: no-repeat center / cover url(../images/wallpaper/wallpaperAccount.svg)
+}
+
+.accountMain button, .accountMain h1 {
+    font-size: 2em;
+    color: white;
+}
+
+.accountMain button {
+    padding: 10px 15px;
+    border-radius:8px;
+    background-image:linear-gradient(to right, #ff831e 50%, #f63e3e 50%, #b21a1a);
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color:#FFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.accountMain button:hover {
+    background-position: 100% 0%;
+}

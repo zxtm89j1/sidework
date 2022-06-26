@@ -6,14 +6,20 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/pages/Home'
 import LogIn from './components/pages/LogIn';
+
 import AboutUs from './components/pages/AboutUs';
 import Categories from './components/pages/Categories';
+
+import Signin from './components/pages/Signin';
+import Account from './components/pages/Account';
+import Protected from './components/Protected';
+import Protected2 from './components/Protected2';
+import { AuthContextProvider} from './context/AuthContext';
 
 
 function App() {
   return (
     <div className="App">
-
       <Router>
         <Navbar id="navbar" />
           <Routes>
@@ -21,7 +27,15 @@ function App() {
             <Route path="/AboutUs" element={<AboutUs/>}/> 
             <Route path="/Categories" element={<Categories/>}/> 
             <Route path="/LogIn" element={<LogIn/>}/> 
-            <Route path="/SignUp" element={<SignUp />}/> 
+            <Route path="/Signin" element={<Signin/>}/> 
+            <Route path="/Account" element=
+            {<Protected> 
+              <Account /> 
+            </Protected>}/> 
+            <Route path="/SignUp" element={
+            <Protected2> 
+              <SignUp />
+            </Protected2>}/> 
           </Routes>
        <Footer />
       </Router>
