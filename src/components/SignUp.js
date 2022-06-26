@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import '../App.css';
-import signIn from '../images/sign-in.svg'
+import signIn from './images/sign-in.svg'
 
 
 const retrieveUser = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [];
@@ -127,7 +127,7 @@ const SignUp = () => {
 
             console.log(retrieveUser);
 
-            setOpenModal(false)
+            setOpenModal(false);
 
         } 
     
@@ -145,22 +145,24 @@ const SignUp = () => {
                 <div className='form-maindiv'>
                     <form onSubmit={submitSignUp}>
                         <div className='form-row'><label>Enter First Name:</label>{errorfName ? (<span className='errorSpan'>{errorfName}</span>) : (null)}<br />
-                        <input type='text' className='input1' onChange={(e) => setFName(e.target.value)} /></div>
+                        <input type='text' className='input1' onChange={(e) => setFName(e.target.value)} style={{borderColor : (errorfName? 'red':'black')}}/></div>
 
                         <div className='form-row'><label>Enter Last Name:</label>{errorlName ? (<span className='errorSpan'>{errorlName}</span>) : (null)}<br />
-                        <input type='text' className='input1'  onChange={(e) => setLName(e.target.value)} /></div>
+                        <input type='text' className='input1'  onChange={(e) => setLName(e.target.value)} style={{borderColor : (errorlName? 'red':'black')}}/></div>
 
                         <div className='form-row'><label>Email:</label>{errorEmail ? (<span className='errorSpan'>{errorEmail}</span>) : (null)}<br />
-                        <input type='email' className='input1'  onChange={(e) => setEmail(e.target.value)} /></div>
+                        <input type='email' className='input1'  onChange={(e) => setEmail(e.target.value)} style={{borderColor : (errorEmail? 'red':'black')}}/></div>
 
                         <div className='form-row'><label>Password:</label>{errorPassword ? (<span className='errorSpan'>{errorPassword}</span>) : (null)}<br />
-                        <input type='password' className='input1' onChange={(e) => setPassword(e.target.value)} /></div>
+                        <input type='password' className='input1' onChange={(e) => setPassword(e.target.value)} style={{borderColor : (errorPassword? 'red':'black')}}/></div>
 
                         <div className='form-row'><label>Retype Password:</label><br />
-                        <input type='password' className='input1'  onChange={(e) => setPassword2(e.target.value)}/></div>
+                        <input type='password' className='input1'  onChange={(e) => setPassword2(e.target.value)} style={{borderColor : (errorPassword? 'red':'black')}}/></div>
 
+                    
                         <div className='mainDivCheckbox'><input type='checkbox' onChange={checkboxHandler}/><label for='checkbox'>Agree to the <a href='https://www.termsandconditionsgenerator.com/live.php?token=qtnXID04FLwHJCnJzVQgUWek2D6hWwWQ'>terms and conditions</a></label></div>
-                        <div className='mainDivCheckbox'>{agree ? (null) : (<span className='errorSpan'>{errorAgree}</span>)}</div>
+                        {agree ? (null) : (<div className='errorSpan'>{errorAgree}</div>)}
+                        
                         
                         <button type='submit'>Create my account</button>
                         <div><span>Already have an account? <a>Try logging in.</a></span></div>
