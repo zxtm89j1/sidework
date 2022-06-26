@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import '../components/styles/SignUp.css';
 import signIn from './images/sign-in.svg'
+import {Link} from 'react-router-dom';
 
 
 const retrieveUser = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [];
