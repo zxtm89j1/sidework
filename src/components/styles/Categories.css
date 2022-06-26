@@ -31,6 +31,53 @@
     font-size: 2em;
 }
 
+
+.Aboutus .sidewordtext {
+    font-family: 'Lobster Two',  cursive;
+    text-shadow: 10px 5px rgb(87, 119, 1);
+    background-color: rgba(103, 220, 119, 0.992);
+    border-radius: 50%;
+    height: 150px;
+    min-height: 100px;
+    width: 150px;
+    min-width: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 rgba(249, 201, 30, 0.706);
+    animation: pulse 2s infinite;
+    pointer-events: none;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 120px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 120px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 120px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+
+
+/*Pulsing*/
+
 @media screen and (max-width: 500px) {
     .categoriesBody {
         padding-top: 400px;
