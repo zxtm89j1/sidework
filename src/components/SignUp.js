@@ -146,19 +146,19 @@ const SignUp = () => {
                 <div className='form-maindiv'>
                     <form onSubmit={submitSignUp}>
                         <div className='form-row'><label>Enter First Name:</label>{errorfName ? (<span className='errorSpan'>{errorfName}</span>) : (null)}<br />
-                        <input type='text' className='input1' onChange={(e) => setFName(e.target.value)} style={{borderColor : (errorfName? 'red':'gray')}}/></div>
+                        <input type='text' className='input1' onChange={(e) => setFName(e.target.value)} style={{borderColor : (errorfName? 'red':'gray')}} placeholder='Enter First Name'/></div>
 
                         <div className='form-row'><label>Enter Last Name:</label>{errorlName ? (<span className='errorSpan'>{errorlName}</span>) : (null)}<br />
-                        <input type='text' className='input1'  onChange={(e) => setLName(e.target.value)} style={{borderColor : (errorlName? 'red':'gray')}}/></div>
+                        <input type='text' className='input1'  onChange={(e) => setLName(e.target.value)} style={{borderColor : (errorlName? 'red':'gray')}} placeholder='Enter Last Name'/></div>
 
                         <div className='form-row'><label>Email:</label>{errorEmail ? (<span className='errorSpan'>{errorEmail}</span>) : (null)}<br />
-                        <input type='email' className='input1'  onChange={(e) => setEmail(e.target.value)} style={{borderColor : (errorEmail? 'red':'gray')}}/></div>
+                        <input type='email' className='input1'  onChange={(e) => setEmail(e.target.value)} style={{borderColor : (errorEmail? 'red':'gray')}} placeholder='Enter a valid email'/></div>
 
                         <div className='form-row'><label>Password:</label>{errorPassword ? (<span className='errorSpan'>{errorPassword}</span>) : (null)}<br />
-                        <input type='password' className='input1' onChange={(e) => setPassword(e.target.value)} style={{borderColor : (errorPassword? 'red':'gray')}}/></div>
+                        <input type='password' className='input1' onChange={(e) => setPassword(e.target.value)} style={{borderColor : (errorPassword? 'red':'gray')}} placeholder='Enter a valid password (min. 5 chars)'/></div>
 
                         <div className='form-row'><label>Retype Password:</label><br />
-                        <input type='password' className='input1'  onChange={(e) => setPassword2(e.target.value)} style={{borderColor : (errorPassword? 'red':'gray')}}/></div>
+                        <input type='password' className='input1'  onChange={(e) => setPassword2(e.target.value)} style={{borderColor : (errorPassword? 'red':'gray')}} placeholder='Retype password'/></div>
 
                     
                         <div className='mainDivCheckbox'><input type='checkbox' onChange={checkboxHandler}/><label for='checkbox'>Agree to the <a href='https://www.termsandconditionsgenerator.com/live.php?token=qtnXID04FLwHJCnJzVQgUWek2D6hWwWQ'>terms and conditions</a></label></div>
