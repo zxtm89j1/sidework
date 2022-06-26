@@ -41,7 +41,6 @@ import {UserAuth} from '../context/AuthContext'
         <div className="links" id={ expandNavbar ? "openLink" : "closeLink"}>
             <Link className="hover" to="/">Home</Link>
             <Link className="hover" to="/AboutUs">About Us</Link>
-
             <Link className="hover" to="/Categories">Categories</Link>
             <Link  className="hover" to="/LogIn">Log In</Link>
             <Link  className="hover" to="/SignUp">Sign Up</Link>
