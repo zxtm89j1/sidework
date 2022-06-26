@@ -1,8 +1,11 @@
-import React, { useEffect} from 'react'
+
+import React, { useEffect } from 'react'
+
 import { GoogleButton } from 'react-google-button';
 import { UserAuth } from '../../context/AuthContext';
 import '../styles/Signin.css';
 import hello from '../images/hello.svg';
+
 import {useNavigate} from 'react-router-dom';
 
 const Signin = () => {
