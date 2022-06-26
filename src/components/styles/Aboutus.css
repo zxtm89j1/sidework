@@ -33,9 +33,7 @@
     justify-content: center
 }
 
-.profilecard .profileCards1,
-.profilecard .profileCards2,
-.profilecard .profileCards3 {
+.profileCards {
     display: flex;
     flex-direction: column;
     background-color: #DEF2F1;
@@ -105,9 +103,7 @@
         flex-direction: column;
         align-items: center;
     }
-    .profilecard .profileCards1,
-    .profilecard .profileCards2,
-    .profilecard .profileCards3 {
+    .profilecard .profileCards {
         height: 275px;
         width: 225px;
     }

@@ -1,0 +1,43 @@
+.box,
+.box2,
+.box3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: rgb(225, 242, 247);
+    border: 2px solid #000;
+    box-Shadow: 10px 10px;
+    padding: 20px;
+}
+
+.box {
+    width: 1000px;
+}
+
+.box2,
+.box3 {
+    width: 500px;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px
+}
+
+.head img {
+    width: 150px;
+    height: 150px
+}
+
+.description {
+    text-align: justify;
+}
+
+.description p {
+    margin-bottom: 20px;
+}

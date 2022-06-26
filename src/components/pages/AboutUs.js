@@ -15,7 +15,7 @@ const AboutUs = () => {
     {/* Profile */}
     <div className='profilecard'>
     {/* Profile 1 */}
-    <div className='profileCards1'>
+    <div className='profileCards'>
       <div className='profile'> <img className='profileimg' src="https://image.kpopmap.com/2019/01/VERIVERY-Faceus-member-profile-YongSeung.jpg"  alt="" /> </div>
       <div className='name'>Kim Teahyung</div>
       <div className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet amet fugit similique</div>
@@ -40,7 +40,7 @@ const AboutUs = () => {
     </div>
 
     {/* Profile 2 */}
-    <div className='profileCards2'>
+    <div className='profileCards'>
       <div className='profile'> <img className='profileimg' src="https://image.kpopmap.com/2019/01/VERIVERY-Faceus-member-profile-YongSeung.jpg"  alt="" /> </div>
       <div className='name'>Kim Teahyung</div>
       <div className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet amet fugit similique</div>
@@ -66,7 +66,7 @@ const AboutUs = () => {
     </div>
 
     {/* Profile 3 */}
-    <div className='profileCards3'>
+    <div className='profileCards'>
       <div className='profile'> <img className='profileimg' src="https://image.kpopmap.com/2019/01/VERIVERY-Faceus-member-profile-YongSeung.jpg"  alt="" /> </div>
       <div className='name'>Kim Teahyung</div>
       <div className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet amet fugit similique</div>
