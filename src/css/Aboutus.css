@@ -1,0 +1,119 @@
+.Aboutus {
+    background-color: #3AAFA9;
+    background: linear-gradient(to bottom, #255060 0%, #2b7a78 10%, #3aafa9 20%, #def2f1 30%, #feffff 40%, #3aafa9 50%, #2b7a78 60%, #255060 70%, #2b7a78 100%);
+}
+
+.sidewordtext,
+.aboutustext {
+    text-align: left;
+    padding-left: 50px;
+    color: white;
+}
+
+.sidewordtext {
+    font-family: 'Lobster';
+    font-size: 80px;
+    font-weight: 500;
+    text-shadow: 3px 3px black;
+}
+
+.aboutustext {
+    font-family: 'Robotoslab';
+    padding-left: 120px;
+    font-size: 60px;
+    font-weight: 155;
+    text-shadow: 3px 3px black;
+}
+
+.profilecard {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center
+}
+
+.profileCards1,
+.profileCards2,
+.profileCards3 {
+    background-color: #DEF2F1;
+    height: 350px;
+    width: 250px;
+    box-shadow: 10px 10px;
+    border-radius: 6px
+}
+
+.profileimg {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 10px
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px
+}
+
+.Profilelogo button,
+.Githublogo button,
+.Gmaillogo button,
+.LinkedInlogo button {
+    border: none;
+    background-color: #DEF2F1;
+}
+
+.Profilelogo img,
+.Githublogo img,
+.Gmaillogo img,
+.LinkedInlogo img {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.Profilelogo img:hover,
+.Githublogo img:hover,
+.Gmaillogo img:hover,
+.LinkedInlogo img:hover {
+    -webkit-transform: scale(1.8) rotate(0.01deg);
+    transform: scale(1.8) rotate(0.01deg);
+}
+
+@media screen and (max-width: 900px) {
+    .profilecard {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .profilecard {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profileCards1,
+    .profileCards2,
+    .profileCards3 {
+        height: 275px;
+        width: 225px;
+    }
+    .profileimg {
+        height: 100px;
+        width: 100px;
+        margin-top: 10px;
+    }
+    .name,
+    .description {
+        font-size: 15px;
+    }
+    .Profilelogo img,
+    .Githublogo img,
+    .Gmaillogo img,
+    .LinkedInlogo img {
+        width: 20px;
+        height: 20px;
+    }
+}
