@@ -40,61 +40,61 @@ const SignUp = () => {
 
         e.preventDefault();
 
-
         //function for validation of first name
         const handleSubmitFname = () => {
             
 
             if(fName.trim() === '') {
-                seterrorfName('First name must not be empty!')
-            } 
-        }
+                seterrorfName('First name must not be empty!');
+            };
+        };
 
         //function for validation of last name
         const handleSubmitLname = () => {
             e.preventDefault();
             if(lName.trim() === '') {
-                seterrorlName('Last name must not be empty!')
-            } 
-        }
+                seterrorlName('Last name must not be empty!');
+            } ;
+        };
 
 
         //function for validation of email
         const handleSubmitEmail = () => {
             e.preventDefault();
             if(email.trim() === '') {
-                seterrorEmail('Email must not be empty!')
-            } 
-        }
+                seterrorEmail('Email must not be empty!');
+            };
+        };
 
         //function for validation of password
         const handleSubmitPassword = () => {
             e.preventDefault();
-            if (password.trim() === '') {
+            if (password.trim() === '') {;
                 seterrorPassword('Password must not be empty!')
             } else if (password !== password2) {
-                seterrorPassword('Passwords don\'t match!')
+                seterrorPassword('Passwords don\'t match!');
             } else if (password.length < 5) {
-                seterrorPassword('Password must be minimum of 5 characters!')
+                seterrorPassword('Password must be minimum of 5 characters!');
             } else if (password.search(/[0-9]/) < 0) {
-                seterrorPassword('Password must contain at least one number!')
-            }
-        }
+                seterrorPassword('Password must contain at least one number!');
+            };
+        };
 
         
         //function for validation if the user agrees to the terms and conditions
         const handleSubmitAgreement = () => {
             if (agree === false) {
-                setErrorAgree('You must agree to the terms and conditions!')
-            } 
-        }
+                setErrorAgree('You must agree to the terms and conditions!');
+            };
+        };
 
 
     const setModal = () => {
-        if (fName !== '' && lName !== '' && email !== '' && password === password2 && agree !== false) {
-            setOpenModal(true)
+        if (fName !== '' && lName !== '' && email !== '' && password === password2 
+        && agree !== false && password.length > 5 && password.search(/[0-9]/) > 0) {
+            setOpenModal(true);
         } else {
-            alert('There are errors! Please properly fill in the fields!')
+            alert('There are errors! Please properly fill in the fields!');
         }
     }
             
@@ -112,7 +112,7 @@ const SignUp = () => {
      // function to save local
      const saveLocal = () => {
         if (fName !== '' && lName !== '' && email !== '' && password === password2 && agree === true) {
-            alert('Information recorded!')
+            alert('Information recorded!');
 
             let users = {
                 fName: fName,
@@ -120,7 +120,7 @@ const SignUp = () => {
                 email: email,
                 password: password,
                 password2: password2
-            }
+            };
 
             retrieveUser.push(users);
             localStorage.setItem('users', JSON.stringify(retrieveUser));
@@ -128,10 +128,10 @@ const SignUp = () => {
             console.log(retrieveUser);
 
             setOpenModal(false);
+            window.location.reload();
+        };
 
-        } 
-    
-    }
+    };
    
    
   return (
@@ -145,27 +145,27 @@ const SignUp = () => {
                 <div className='form-maindiv'>
                     <form onSubmit={submitSignUp}>
                         <div className='form-row'><label>Enter First Name:</label>{errorfName ? (<span className='errorSpan'>{errorfName}</span>) : (null)}<br />
-                        <input type='text' className='input1' onChange={(e) => setFName(e.target.value)} style={{borderColor : (errorfName? 'red':'black')}}/></div>
+                        <input type='text' className='input1' onChange={(e) => setFName(e.target.value)} style={{borderColor : (errorfName? 'red':'gray')}} placeholder='Enter First Name'/></div>
 
                         <div className='form-row'><label>Enter Last Name:</label>{errorlName ? (<span className='errorSpan'>{errorlName}</span>) : (null)}<br />
-                        <input type='text' className='input1'  onChange={(e) => setLName(e.target.value)} style={{borderColor : (errorlName? 'red':'black')}}/></div>
+                        <input type='text' className='input1'  onChange={(e) => setLName(e.target.value)} style={{borderColor : (errorlName? 'red':'gray')}} placeholder='Enter Last Name'/></div>
 
                         <div className='form-row'><label>Email:</label>{errorEmail ? (<span className='errorSpan'>{errorEmail}</span>) : (null)}<br />
-                        <input type='email' className='input1'  onChange={(e) => setEmail(e.target.value)} style={{borderColor : (errorEmail? 'red':'black')}}/></div>
+                        <input type='email' className='input1'  onChange={(e) => setEmail(e.target.value)} style={{borderColor : (errorEmail? 'red':'gray')}} placeholder='Enter a valid email'/></div>
 
                         <div className='form-row'><label>Password:</label>{errorPassword ? (<span className='errorSpan'>{errorPassword}</span>) : (null)}<br />
-                        <input type='password' className='input1' onChange={(e) => setPassword(e.target.value)} style={{borderColor : (errorPassword? 'red':'black')}}/></div>
+                        <input type='password' className='input1' onChange={(e) => setPassword(e.target.value)} style={{borderColor : (errorPassword? 'red':'gray')}} placeholder='Enter a valid password (min. 5 chars)'/></div>
 
                         <div className='form-row'><label>Retype Password:</label><br />
-                        <input type='password' className='input1'  onChange={(e) => setPassword2(e.target.value)} style={{borderColor : (errorPassword? 'red':'black')}}/></div>
+                        <input type='password' className='input1'  onChange={(e) => setPassword2(e.target.value)} style={{borderColor : (errorPassword? 'red':'gray')}} placeholder='Retype password'/></div>
 
                     
                         <div className='mainDivCheckbox'><input type='checkbox' onChange={checkboxHandler}/><label for='checkbox'>Agree to the <a href='https://www.termsandconditionsgenerator.com/live.php?token=qtnXID04FLwHJCnJzVQgUWek2D6hWwWQ'>terms and conditions</a></label></div>
-                        {agree ? (null) : (<div className='errorSpan'>{errorAgree}</div>)}
+                        {agree ? (null) : (<div className='errorSpan1'>{errorAgree}</div>)}
                         
                         
                         <button type='submit'>Create my account</button>
-                        <div><span>Already have an account? <a>Try logging in.</a></span></div>
+                        <div className='aLogInMain'><span className='already'>Already have an account? <Link to="/LogIn"> <a class='aLogIn'>Try logging in.</a></Link></span></div>
 
                         
                     </form>
@@ -185,7 +185,7 @@ const SignUp = () => {
         <div className='modalInfoRow'><div className='modalInfoLabel'>Email:</div> <div className='modalInfoInput'>{email}</div></div>
         <div className='modalInfoRow'><div className='modalInfoLabel'>Registered Password:</div> <div className='modalInfoInput'>{password}</div></div>
 
-        <div className='buttonRow'><button onClick={saveLocal}>Confirm</button> <button onClick={() => {setOpenModal(false)}}>Close and Edit Information</button> <button onClick={clearLocal}>Clear Storage</button></div>
+        <div className='buttonRow'><button onClick={saveLocal}>Confirm</button> <button onClick={() => {setOpenModal(false)}} className='close'>Close and Edit Information</button> <button onClick={clearLocal} className='clearLocal'>Clear Storage</button></div>
       </div>
     </div>       
 
