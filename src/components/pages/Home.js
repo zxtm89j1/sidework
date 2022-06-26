@@ -54,7 +54,7 @@ function Home() {
                         <button className='button btnColor'><Link  className="hover" to="/Categories">MEMBERS</Link></button>
                         <h2>We're also looking to hire more!</h2>
                         <button className='button btnColor2'><Link  className="hover" to="/SignUp">JOIN US</Link></button>
-                    <img src={meeting} className='working1-a'/>
+                    <img src={meeting} className='working1-a' alt='Meeting'/>
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@ function Home() {
                         <div className="subScreen3-a">
 
                         <div className='money whyText'>
-                            <img src={money} className='working2'/>
+                            <img src={money} className='working2'  alt='Money'/>
                         </div>
 
                         <div className='whyText textBG'>
@@ -81,7 +81,7 @@ function Home() {
                         <div className="subScreen3-b"> 
 
                         <div className='money2 whyText'>
-                            <img src={chill} className='working2'/>
+                            <img src={chill} className='working2'  alt='Workers Posing'/>
                         </div>
 
                         <div className='whyText textBG2'>

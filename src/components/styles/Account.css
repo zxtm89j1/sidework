@@ -1,14 +1,26 @@
-.accountMain {
+.accountMain{
+    padding-top: 120px;
     width: 100vw;
-    height: 100vh;
+    height: 105vh;
     display: flex;
     flex-direction: column;
+    gap: 2.5%;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
-    background: no-repeat center / cover url(../images/wallpaper/wallpaperAccount.svg)
+    background: no-repeat center / cover url(../images/wallpaper/wallpaperAccount.svg);
+    overflow: auto;
 }
+.accountHeading {
+    display: flex;
+    align-items: center;
+    gap: 2.5%;
+    width: 100vw;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
 
 .accountMain button, .accountMain h1 {
     font-size: 2em;
@@ -29,4 +41,94 @@
 
 .accountMain button:hover {
     background-position: 100% 0%;
+}
+
+.accountBody {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.accountSubBody {
+    width: 30%;
+    height: 85vw;
+    min-width: 300px;
+    min-height: 550px;
+    max-height: 1050px;
+    background-color: rgba(128, 128, 128, 0.289);
+    border-radius: 1em;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+}
+
+.accountSubBody2 {
+    width: 65%;
+    height: 85vw;
+    min-width: 300px;
+    min-height: 700px;
+    max-height: 1050px;
+    background-color: rgba(128, 128, 128, 0.289);
+    border-radius: 1em;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+}
+.accountSubBody2 .sleeping {
+    border-radius: 2.5em;
+    box-shadow: 0em 0em 1em 1em rgba(168, 253, 234, 0.351);
+    width: 95%;
+    max-width: 400px;
+}
+
+.accountSubBody h1 , .accountSubBody2 h2 {
+    padding-top: 10px;
+    color: white;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+      
+ @keyframes blinker {
+    50% {
+        opacity: 0;
+        }
+}
+
+@media screen and (max-width: 1047px) {
+    .accountHeading {
+        padding-top: 120px;
+    }
+    .accountMain{
+        padding-top: 0px;
+        height: 190vh;
+    }
+}
+
+@media screen and (max-width: 922px) {
+    .accountSubBody {
+        min-width: 350px;
+    }
+
+    .accountSubBody2 {
+        min-width: 350px;
+    }
+    .accountSubBody {
+        margin-bottom: 25px;
+    }
 }
