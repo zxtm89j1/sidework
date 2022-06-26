@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/sidework/static/css/main.db79b31f.css",
+    "main.js": "/sidework/static/js/main.cec718ed.js",
+    "static/js/787.3c5e7a93.chunk.js": "/sidework/static/js/787.3c5e7a93.chunk.js",
+    "static/media/meeting.svg": "/sidework/static/media/meeting.7fef6b93b885cf51ef04cef49916e281.svg",
+    "static/media/wallpaper4.svg": "/sidework/static/media/wallpaper4.de388dd4e6c19a1fd62c.svg",
+    "static/media/chill.svg": "/sidework/static/media/chill.9a7cce24ed4c6b3fd7f34e05f57cdc6e.svg",
+    "static/media/money.svg": "/sidework/static/media/money.819342658303e28b0ce681a90bca4b94.svg",
+    "static/media/workingIcon.svg": "/sidework/static/media/workingIcon.4dc9796fcf71c242adc2e018a4147a53.svg",
+    "static/media/Profile6.svg": "/sidework/static/media/Profile6.f64be9e4512a3f720b0863001320a498.svg",
+    "static/media/Profile3.svg": "/sidework/static/media/Profile3.6d4152b18ec2113b1988c75942ce8ecb.svg",
+    "static/media/Profile1.svg": "/sidework/static/media/Profile1.72f27700cc4a49cc4c06267d71d994b2.svg",
+    "static/media/hello.svg": "/sidework/static/media/hello.5a6210ab3264f059d9fb8e0f25c0ea8f.svg",
+    "static/media/Profile2.svg": "/sidework/static/media/Profile2.c1d396d8d5eda4f601377744c03e0b71.svg",
+    "static/media/Profile9.svg": "/sidework/static/media/Profile9.11c129ac05d8eded0b542b1a35dff725.svg",
+    "static/media/Profile8.svg": "/sidework/static/media/Profile8.dc231bd712401b1a7783cc647e01bc48.svg",
+    "static/media/Profile4.svg": "/sidework/static/media/Profile4.79d050bb25cad11d93244204579b4488.svg",
+    "static/media/Profile5.svg": "/sidework/static/media/Profile5.3677fb058ac0235a56994b21a50c00d4.svg",
+    "static/media/Profile7.svg": "/sidework/static/media/Profile7.69c96468407dc1a5cb7566fc722395f1.svg",
+    "static/media/sign-in.svg": "/sidework/static/media/sign-in.67d77e3b8ffbf6ea2250ae616f584733.svg",
+    "static/media/wallpaper1.svg": "/sidework/static/media/wallpaper1.7d594e72bf3ed6feeede.svg",
+    "static/media/wallpaper2.svg": "/sidework/static/media/wallpaper2.cabf8229d60cb9c93483.svg",
+    "index.html": "/sidework/index.html",
+    "static/media/wallpaper3.svg": "/sidework/static/media/wallpaper3.d8f6bc3ca205a064e944.svg",
+    "static/media/menu.svg": "/sidework/static/media/menu.aad9faf92a14b8a0f822cd079983e5ce.svg",
+    "main.db79b31f.css.map": "/sidework/static/css/main.db79b31f.css.map",
+    "main.cec718ed.js.map": "/sidework/static/js/main.cec718ed.js.map",
+    "787.3c5e7a93.chunk.js.map": "/sidework/static/js/787.3c5e7a93.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db79b31f.css",
+    "static/js/main.cec718ed.js"
+  ]
+}
