@@ -46,6 +46,7 @@
   border: none;
   background-color: #3AAFA9;
   color: white;
+  cursor: pointer;
 }
 
 .form-row {
@@ -56,6 +57,7 @@
   color: #015D3C;
   font-weight: bold;
   cursor: pointer;
+  font-size: 1.5vh;
 }
 
 
@@ -76,7 +78,7 @@
 }
 
 .form-maindiv span {
-  font-size: 2vh;
+  font-size: 1.5vh;
   font-family: 'Roboto Slab', serif;
 }
 
@@ -93,6 +95,15 @@
   font-family: 'Roboto Slab', serif;
   font-size: 10vh;
   margin: 0px 0px;
+}
+
+.aLogIn {
+  font-family: 'Roboto Slab', serif;
+  cursor: pointer;
+}
+
+.aLogInMain {
+  margin-top: 2%;
 }
 
 .main-content .form-maindiv {
@@ -115,7 +126,7 @@
 
 .mainDivCheckbox label {
   font-family: 'Roboto Slab', serif;
-  font-size: 2vh;
+  font-size: 1.5vh;
   
 }
 
@@ -151,13 +162,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
 .modalContainer {
   background-color: #015D3C;
   padding: 1%;
+  width: 30%;
+  margin-top: 7%;
+  border-radius: 15px;
+  /* width: 30%;
+  margin-top: 10%; */
 }
+
 .modalContainer > div {
   margin: 5% 5%;
 }
@@ -199,9 +215,57 @@
   font-size: 2vh;
   font-family: 'Roboto Slab', serif;
   padding: 3%;
-  border-radius: 5%;
-  
+  border-radius: 20px;
+  color: white;
+  background-color: #009396;
+  cursor: pointer;
 }
+
+.buttonRow button:hover {
+  background-color: #35b2b4;
+}
+
+.buttonRow .close, .buttonRow .clearLocal {
+  background-color: rgb(235, 39, 39);
+}
+
+.buttonRow .close:hover, .buttonRow .clearLocal:hover {
+  background-color: rgb(219, 60, 60);
+}
+
+.errorSpan1 {
+  margin: 1% 1%;
+  color: red;
+  font-family: 'Roboto Slab', serif;
+}
+
+@media screen and (max-width: 1800px) {
+  .form-maindiv button {
+    font-size: 1.5vh;
+  }
+
+.form-maindiv span {
+  font-size: 1.5vh
+}
+
+.form-row label, .form-row input {
+  font-size: 2vh;
+}
+
+.form-maindiv form {
+  padding: 4%;
+}
+
+}
+
+
+@media screen and (max-width: 1121px) {
+  .main-content {
+    padding-top: 20%;
+  }
+}
+
+
 
 @media screen and (max-width: 1024px) {
   .form-maindiv form .form-row label {
@@ -212,20 +276,29 @@
     font-size: 7vh;
   }
 
-  .form-maindiv form button {
-    font-size: 2vh;
-  }
+
 
   .form-maindiv form .input1 {
     font-size: 1vh;
   }
 
-  .form-maindiv span, .form-maindiv a {
-    font-size: 2vh;
-  }
+
 
   .form-maindiv form {
     padding: 10%;
+  }
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .mainDivCheckbox a {
+    font-size: 1.5vh;
+  }
+
+  .form-maindiv button {
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 }
 
@@ -263,7 +336,7 @@
 
   .form-maindiv form {
   background-color: #FEFFFF;
-  padding: 5vh;
+  padding: 5%;
   box-shadow: 20px 20px #015D3C;  border-radius: 5%;
 }
 
@@ -302,6 +375,14 @@
 
   .form-maindiv form {
     padding: 10%;
+  }
+
+  .main-content {
+    padding-top: 50%;
+  }
+
+  .errorSpan1 {
+    font-size: 1.5vh;
   }
 
 }
