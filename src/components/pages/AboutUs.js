@@ -7,8 +7,7 @@ import linkedin_logo from '../images/Aboutus/LinkedinLogo.svg';
 import TJ from '../images/Aboutus/TJGimenez.png';
 import Nino from '../images/Aboutus/NinoAncheta.jpg';
 import spencer from '../images/Aboutus/spencer.jpg';
-import '../styles/Aboutus.css'
-
+import '../styles/Aboutus.css';
 
 
 const AboutUs = () => {
