@@ -15,7 +15,7 @@
     text-align: center;
     padding-left: 50px;
     color: white;
-    font-family: 'Roboto Slab', serif;    
+    font-family: 'Roboto Slab', serif;
     font-size: 2.5em;
     font-weight: 700;
     text-shadow: 5px 5px rgb(2, 31, 62);
@@ -44,9 +44,7 @@
     justify-content: center
 }
 
-.profilecard .profileCards1,
-.profilecard .profileCards2,
-.profilecard .profileCards3 {
+.profileCards {
     display: flex;
     flex-direction: column;
     background-color: #DEF2F1;
@@ -64,9 +62,7 @@
     transition: 0.3s ease-in-out;
 }
 
-.profilecard .profileCards1:hover,
-.profilecard .profileCards2:hover,
-.profilecard .profileCards3:hover{
+.profilecard .profileCards:hover {
     transform: translate(0, -50px);
 }
 
@@ -114,13 +110,14 @@
 .name,
 .description {
     font-size: 25px;
-    font-family: 'Roboto Slab', serif;    
+    font-family: 'Roboto Slab', serif;
     text-align: center;
 }
 
 .name {
     font-weight: 700;
 }
+
 @media screen and (max-width: 900px) {
     .profilecard {
         flex-direction: column;
@@ -133,9 +130,7 @@
         flex-direction: column;
         align-items: center;
     }
-    .profilecard .profileCards1,
-    .profilecard .profileCards2,
-    .profilecard .profileCards3 {
+    .profilecard .profileCards {
         height: 275px;
         width: 225px;
     }
@@ -147,7 +142,7 @@
     .name,
     .description {
         font-size: 15px;
-        font-family: 'Roboto Slab', serif;       
+        font-family: 'Roboto Slab', serif;
         text-align: center;
     }
     .profilecard .Profilelogo img,

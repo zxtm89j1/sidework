@@ -15,8 +15,8 @@ const AboutUs = () => {
 
     {/* Profile */}
     <div className='profilecard'>
-    {/* Profile 1 Niño */}
-    <div className='profileCards1'>
+    {/* Profile 1 */}
+    <div className='profileCards'>
       <div className='profile'> <img className='profileimg' src="https://image.kpopmap.com/2019/01/VERIVERY-Faceus-member-profile-YongSeung.jpg"  alt="" /> </div>
       <div className='name'>Niño Ancheta</div>
       <div className='description'>A full stack developer always eager to learn!</div>
@@ -40,8 +40,8 @@ const AboutUs = () => {
      </div> 
     </div>
 
-    {/* Profile 2 Spencer*/}
-    <div className='profileCards2'>
+    {/* Profile 2 */}
+    <div className='profileCards'>
       <div className='profile'> <img className='profileimg' src="https://image.kpopmap.com/2019/01/VERIVERY-Faceus-member-profile-YongSeung.jpg"  alt="" /> </div>
       <div className='name'>Spencer Bohol</div>
       <div className='description'>A full stack developer always eager to learn!</div>
@@ -65,12 +65,12 @@ const AboutUs = () => {
           </Tooltip>  </a></div>
      </div> 
     </div>
+    {/* Profile 3 */}
+    <div className='profileCards'>
+      <div className='profile'> <img className='profileimg' src="https://image.kpopmap.com/2019/01/VERIVERY-Faceus-member-profile-YongSeung.jpg"  alt="" /> </div>
+      <div className='name'>Kim Teahyung</div>
+      <div className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet amet fugit similique</div>
 
-    {/* Profile 3 TJ */}
-    <div className='profileCards3'>
-      <div className='profile'> <img className='profileimg' src={TJ}  alt="TJ Gimenez" /> </div>
-      <div className='name'>TJ Gimenez</div>
-      <div className='description'>A full stack developer always eager to learn!</div>
 
       <div className='links'>
         <div className='Profilelogo'> <a href="https://tj0023.github.io/My-Portfolio/" target="_blank" rel="noopener noreferrer">  
