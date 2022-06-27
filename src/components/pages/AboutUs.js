@@ -6,8 +6,10 @@ import gmail_logo from '../images/Aboutus/GmailLogo.svg';
 import linkedin_logo from '../images/Aboutus/LinkedinLogo.svg';
 import TJ from '../images/Aboutus/TJGimenez.png';
 import Nino from '../images/Aboutus/NinoAncheta.jpg';
-
+import spencer from '../images/Aboutus/spencer.jpg';
 import '../styles/Aboutus.css'
+
+
 
 const AboutUs = () => {
   return (
@@ -44,24 +46,25 @@ const AboutUs = () => {
 
     {/* Profile 2 */}
     <div className='profileCards'>
-      <div className='profile'> <img className='profileimg' src="https://image.kpopmap.com/2019/01/VERIVERY-Faceus-member-profile-YongSeung.jpg"  alt="" /> </div>
+      <div className='profile'> <img className='profileimg' src={spencer}  alt="" /> </div>
       <div className='name'>Spencer Bohol</div>
-      <div className='description'>A full stack developer always eager to learn!</div>
+      <div className='description'>I’m saying yes to new adventures!</div>
 
       <div className='links'>
-        <div className='Profilelogo'> <a href="https://anchetanino.github.io/portfolio.github.io/" target="_blank" rel="noopener noreferrer">  
+
+        <div className='Profilelogo'> <a href="https://zxtm89j1.github.io/portfolio/" target="_blank" rel="noopener noreferrer">  
           <Tooltip title="Portfolio">
              <button> <img src={profile_logo} alt="Profile logo"/> </button>
           </Tooltip> </a>  </div>
-        <div className='Githublogo'><a href="https://github.com/Anchetanino" target="_blank" rel="noopener noreferrer">
+        <div className='Githublogo'><a href="https://github.com/zxtm89j1" target="_blank" rel="noopener noreferrer">
           <Tooltip title="Github">
             <button> <img src={github_logo} alt="Github logo"/> </button>
           </Tooltip> </a> </div>
-        <div className='Gmaillogo'><a href="mailto:ninoanchate12345@gmail.com" target="_blank" rel="noopener noreferrer"> 
+        <div className='Gmaillogo'><a href="mailto:spencerbohol3@gmail.com" target="_blank" rel="noopener noreferrer"> 
           <Tooltip title="Email">
             <button> <img src={gmail_logo} alt="Gmail logo"/> </button>
           </Tooltip> </a> </div>
-        <div className='LinkedInlogo'><a href="https://www.linkedin.com/in/nino-ancheta-b99a3a205/" target="_blank" rel="noopener noreferrer">
+        <div className='LinkedInlogo'><a href="https://www.linkedin.com/in/spencerbohol/" target="_blank" rel="noopener noreferrer">
           <Tooltip title="LinkedIn"> 
             <button> <img src={linkedin_logo} alt="Linkedin logo"/> </button>
           </Tooltip>  </a></div>
