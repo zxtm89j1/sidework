@@ -1,92 +1,62 @@
-/*Sign Up Form*/
-
-.signUpMain
-.sign-up-body * {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-} 
-.signUpMain
-.form-maindiv * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  outline: 0px solid red;
 }
-.signUpMain
-.nav-signup {
-  background-color: #2B7A78;
-  color: white;
-  font-family: 'Lobster', cursive;
-  font-size: 10vh;
-  padding: 1%;
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-color: #009396;
+  overflow-x: hidden;
 }
-.signUpMain
-.main1 {
-  position: relative;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
 }
-.signUpMain
-.signup-body {
-  background-color: #3AAFA9;
-  padding-bottom: 50%;
-  padding: 10%;
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
 }
-.signUpMain
 .signup-body img {
-  width: 40%;
+  width: 35%;
+  margin-left: 10%;
 }
-
-/* .form-row {
-  display: flex;
-  margin-top: 3%;
-  margin-bottom: 3%;
-} */
-
-.signUpMain
+/* forms sign up */
 .form-maindiv form {
   background-color: #FEFFFF;
   padding: 5vh;
   box-shadow: 40px 40px #015D3C;
   border-radius: 5%;
 }
-.signUpMain
 .form-maindiv button {
   width: 100%;
   font-size: 3vh;
-  padding: 2%;
-  border-radius: 0.5em;
+  padding: 1%;
+  border-radius: 100px;
   border: none;
   background-color: #3AAFA9;
   color: white;
-  transition: 0.3s;
   cursor: pointer;
 }
 
-.signUpMain
-.form-maindiv button:hover {
-  background-color: #0bba54;
-  cursor: pointer;
-}
-
-.signUpMain
 .form-row {
   margin-top: 3%;
 }
-.signUpMain
 .form-maindiv a {
   color: #015D3C;
   font-weight: bold;
   cursor: pointer;
+  font-size: 1.5vh;
 }
 
 
-
-.signUpMain
 .form-row label {
   font-size: 3vh;
   font-family: 'Roboto Slab', serif;
 }
-
-.signUpMain
 .form-row input {
   font-size: 3vh;
   width: 100%;
@@ -95,22 +65,17 @@
   margin-right: 5%;
   
 }
-.signUpMain
-.form-maindiv span {
-  font-size: 2vh;
+
+.form-maindiv span { font-size: 1.5vh;
   font-family: 'Roboto Slab', serif;
-  text-align: center;
 }
 
-
-
-
-.signUpMain
 .main-content {
   display: flex;
-  padding: 1%;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.signUpMain
 .main-content h1 {
   flex: 1;
   color: white;
@@ -118,13 +83,19 @@
   font-size: 10vh;
   margin: 0px 0px;
 }
-.signUpMain
+
+.aLogIn {
+  font-family: 'Roboto Slab', serif;
+  cursor: pointer;
+}
+
+.aLogInMain {
+  margin-top: 2%;
+}
+
 .main-content .form-maindiv {
   flex: 1;
 }
-
-
-.signUpMain
 .mainDivCheckbox {
   display: flex;
   justify-content: center;
@@ -132,132 +103,244 @@
   margin: 3% 3%;
   
 }
-.signUpMain
 .mainDivCheckbox input {
   margin-right: 5%;
   font-size: 2vh;
   color: #015D3C;
-  height: 1.25em;
-  width: 1.25em;
 }
 
-.signUpMain
 .mainDivCheckbox label {
   font-family: 'Roboto Slab', serif;
-  font-size: 2vh;
-  
+  font-size: 1.5vh;
+
 }
-.signUpMain
+
 .errorSpan {
   color: red;
   margin-left: 1%;
 }
+/* for modals sign up */
+.modalBackgroundClose {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(58, 175, 169, 0.8);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalOpen {
+  visibility: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(58, 175, 169, 0.8);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-@media screen and (max-width: 1024px) {
-    .signUpMain
-    .form-maindiv form .form-row label {
-      font-size: 2vh;
+.modalContainer {
+  background-color: #015D3C;
+  padding: 1%;
+  width: 30%;
+  margin-top: 7%;
+  border-radius: 15px;
+  /* width: 30%;
+  margin-top: 10%; */
+}
+
+.modalContainer > div {
+  margin: 5% 5%;
+}
+.modalTitleContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+ 
+}
+.modalTitle {
+  font-family: 'Lobster', cursive;
+  font-size: 3.5vh;
+  color: white;
+  
+}
+.modalInfoLabel {
+  font-family: 'Roboto Slab', serif;
+  font-size: 3vh;
+  color: white;
+}
+.modalInfoInput {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2vh;
+  color: #3AAFA9;
+}
+.buttonRow {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.buttonRow button {
+  margin: 3% 3%;
+  font-size: 2vh;
+  font-family: 'Roboto Slab', serif;
+  padding: 3%;
+  border-radius: 20px;
+  color: white;
+  background-color: #009396;
+  cursor: pointer;
+}
+
+.buttonRow button:hover {
+  background-color: #35b2b4;
+}
+
+.buttonRow .close, .buttonRow .clearLocal {
+  background-color: rgb(235, 39, 39);
+}
+
+.buttonRow .close:hover, .buttonRow .clearLocal:hover {
+  background-color: rgb(219, 60, 60);
+}
+
+.errorSpan1 {
+  margin: 1% 1%;
+  color: red;
+  font-family: 'Roboto Slab', serif;
+}
+
+@media screen and (max-width: 1800px) {
+  .form-maindiv button {
+    font-size: 1.5vh;
   }
 
-  .signUpMain
+.form-maindiv span {
+  font-size: 1.5vh
+}
+
+.form-row label, .form-row input {
+  font-size: 2vh;
+}
+
+.form-maindiv form {
+  padding: 4%;
+}
+
+}
+
+
+@media screen and (max-width: 1121px) {
+  .main-content {
+    padding-top: 20%;
+  }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .form-maindiv form .form-row label {
+      font-size: 2vh;
+  }
   .main-content > h1 {
     font-size: 7vh;
   }
-
-  .signUpMain
-  .form-maindiv form button {
-    font-size: 2vh;
-  }
-  .signUpMain
   .form-maindiv form .input1 {
-    font-size: 2.5vh;
+    font-size: 1vh;
   }
-  .signUpMain
-  .form-maindiv span, .form-maindiv a {
-    font-size: 1.5vh;
-  }
-  .signUpMain
+
   .form-maindiv form {
     padding: 10%;
+  }
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .mainDivCheckbox a {
+    font-size: 1.5vh;
+  }
+
+  .form-maindiv button {
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 }
 
 @media screen and (max-width: 699px) {
-    .signUpMain
-    .main-content {
+  .main-content {
     display: flex;
     flex-direction: column;
   }
-    .signUpMain
   .form-maindiv form {
     margin-top: 10%;
     margin-bottom: 10%;
   }
-  .signUpMain
   .signup-body img {
     width: 60%;
     margin-top: 10%;
     margin-bottom: 10%;
   }
-  .signUpMain
   .main1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .signUpMain
   .signup-body {
-    padding: 2%;
+    padding: 10%;
   }
-  .signUpMain
   .main-content h1 {
     font-size: 5vh;
   }
-  .signUpMain
+
   .form-maindiv form {
   background-color: #FEFFFF;
-  padding: 5vh;
   box-shadow: 20px 20px #015D3C;  border-radius: 5%;
 }
-.signUpMain
+
 .mainDivCheckbox label {
   font-size: 1.5vh;
 }
-.signUpMain
 .form-maindiv span, .form-maindiv a {
   font-size: 1.5vh;
 }
-.signUpMain
 .form-maindiv button {
   margin: 5% 0%;
 }
-
 }
-
 @media screen and (max-width: 427px) {
-    .signUpMain
-    .form-maindiv form {
+  .form-maindiv form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   }
-
-
 }
-
-
 @media screen and (max-width: 383px) {
-    .signUpMain
-    .form-maindiv form {
+  .form-maindiv form {
     background-color: #FEFFFF;
     padding: 5vh;
     box-shadow: 0px 0px; border-radius: 5%;
   }
-.signUpMain
   .form-maindiv form {
     padding: 10%;
   }
 
+  .main-content {
+    padding-top: 50%;
+  }
+
+  .errorSpan1 {
+    font-size: 1.5vh;
+  }
+
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 98, 62);
+  border-radius: 1em;
 }

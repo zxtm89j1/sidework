@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap');
+.Aboutus {
+    padding-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3AAFA9;
+    background: no-repeat center / cover url(../images/wallpaper/wallpaperAboutUs.svg);
+    overflow: auto;
+    display: grid;
+    place-items: center;
+}
+
+.sidewordtext,
+.Aboutus .aboutustext {
+    text-align: center;
+    padding-left: 50px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-shadow: 5px 5px rgb(2, 31, 62);
+}
+
+.sidewordtext {
+    font-family: 'Lobster';
+    font-size: 80px;
+    font-weight: 500;
+    text-shadow: 3px 3px black;
+}
+
+.aboutustext {
+    font-family: 'Robotoslab';
+    padding-left: 120px;
+    font-size: 60px;
+    font-weight: 155;
+    text-shadow: 3px 3px black;
+}
+
+.profilecard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center
+}
+
+.profileCards {
+    display: flex;
+    flex-direction: column;
+    background-color: #DEF2F1;
+    height: 45vh;
+    min-height: 400px;
+    max-height: 600px;
+    width: 30vw;
+    min-width: 300px;
+    max-width: 450px;
+    box-shadow: 10px 10px;
+    border-radius: 6px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.profilecard .profileCards:hover {
+    transform: translate(0, -50px);
+}
+
+.profileimg {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 10px
+}
+
+.profilecard .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.profilecard .Profilelogo button,
+.profilecard .Githublogo button,
+.profilecard .Gmaillogo button,
+.profilecard .LinkedInlogo button {
+    border: none;
+    background-color: #DEF2F1;
+}
+
+.profilecard .Profilelogo img,
+.profilecard .Githublogo img,
+.profilecard .Gmaillogo img,
+.profilecard .LinkedInlogo img {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    height: 40px
+}
+
+.profilecard .Profilelogo img:hover,
+.profilecard .Githublogo img:hover,
+.profilecard .Gmaillogo img:hover,
+.profilecard .LinkedInlogo img:hover {
+    -webkit-transform: scale(1.8) rotate(0.01deg);
+    transform: scale(1.8) rotate(0.01deg);
+}
+
+.name,
+.description {
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.name {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+    .profilecard {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .profilecard {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profilecard .profileCards {
+        height: 275px;
+        width: 225px;
+    }
+    .profilecard .profileimg {
+        height: 100px;
+        width: 100px;
+        margin-top: 10px;
+    }
+    .name,
+    .description {
+        font-size: 15px;
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+    }
+    .profilecard .Profilelogo img,
+    .profilecard .Githublogo img,
+    .profilecard .Gmaillogo img,
+    .profilecard .LinkedInlogo img {
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -23,6 +23,17 @@
     width: 100%;
   }
 
+  .navbar .logo button {
+    color: white;
+    font-size: 0.75em;
+  }
+
+  .navbar .logo p {
+    color: white;
+    font-size: 0.9em;
+    transition: 0.1s ease-in-out;
+  }
+
  .logo h2{
     font-family: 'Lobster Two',  cursive;
     pointer-events: none;
@@ -77,6 +88,31 @@
     text-align: center;
   }
   
+  
+  #open .buttonLogOut {
+    color: white;
+    background-color: red;
+  }
+
+
+  #open .buttonLogOut {
+    padding: 10px 15px;
+    border-radius:8px;
+    background-image:linear-gradient(to right, #ff831e 50%, #f63e3e 50%, #b21a1a);
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color:#FFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#open .buttonLogOut:hover {
+    background-position: 100% 0%;
+}
+
+
+
   #openLink {
     display: flex;
     transition: 0.3s ease-in-out;    
