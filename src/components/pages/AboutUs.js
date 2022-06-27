@@ -45,7 +45,7 @@ const AboutUs = () => {
     <div className='profileCards'>
       <div className='profile'> <img className='profileimg' src={spencer}  alt="" /> </div>
       <div className='name'>Spencer Bohol</div>
-      <div className='description'>I’m saying yes to new adventures!</div>
+      <div className='description'>I’m saying "YES" to new adventures!</div>
 
       <div className='links'>
         <div className='Profilelogo'> <a href="https://zxtm89j1.github.io/portfolio/" target="_blank" rel="noopener noreferrer">  
