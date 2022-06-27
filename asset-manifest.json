@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/sidework/static/css/main.db79b31f.css",
-    "main.js": "/sidework/static/js/main.4b844839.js",
+    "main.css": "/sidework/static/css/main.51d39eb7.css",
+    "main.js": "/sidework/static/js/main.1680e737.js",
     "static/js/787.3c5e7a93.chunk.js": "/sidework/static/js/787.3c5e7a93.chunk.js",
+    "static/media/sleepingGif.gif": "/sidework/static/media/sleepingGif.2475ea946bb99e2d6990.gif",
+    "static/media/spencer.jpg": "/sidework/static/media/spencer.74725ed5d4114aee017a.jpg",
+    "static/media/NinoAncheta.jpg": "/sidework/static/media/NinoAncheta.070934044ed0d59dca35.jpg",
     "static/media/meeting.svg": "/sidework/static/media/meeting.7fef6b93b885cf51ef04cef49916e281.svg",
+    "static/media/TJGimenez.png": "/sidework/static/media/TJGimenez.99a69d8df5999c037748.png",
     "static/media/wallpaper4.svg": "/sidework/static/media/wallpaper4.de388dd4e6c19a1fd62c.svg",
     "static/media/chill.svg": "/sidework/static/media/chill.9a7cce24ed4c6b3fd7f34e05f57cdc6e.svg",
     "static/media/money.svg": "/sidework/static/media/money.819342658303e28b0ce681a90bca4b94.svg",
@@ -19,17 +23,33 @@
     "static/media/Profile5.svg": "/sidework/static/media/Profile5.3677fb058ac0235a56994b21a50c00d4.svg",
     "static/media/Profile7.svg": "/sidework/static/media/Profile7.69c96468407dc1a5cb7566fc722395f1.svg",
     "static/media/sign-in.svg": "/sidework/static/media/sign-in.67d77e3b8ffbf6ea2250ae616f584733.svg",
+    "static/media/Javalogo.svg": "/sidework/static/media/Javalogo.0ac433e8b2595b3a8b01d3a2730f3b18.svg",
+    "static/media/wallpaperAccount.svg": "/sidework/static/media/wallpaperAccount.f28ca8bb752b1282a646.svg",
+    "static/media/Reactjslogo.svg": "/sidework/static/media/Reactjslogo.99968e1f4d0412d16dc4c870f4ceb4a7.svg",
     "static/media/wallpaper1.svg": "/sidework/static/media/wallpaper1.7d594e72bf3ed6feeede.svg",
+    "static/media/HTMLlogo.svg": "/sidework/static/media/HTMLlogo.50ae0b9b67ba017aa092f7f88718cf47.svg",
+    "static/media/C++logo.svg": "/sidework/static/media/C++logo.84629d5d06cd1fbb37b26b692620aac1.svg",
+    "static/media/Csslogo.svg": "/sidework/static/media/Csslogo.7e88a7277f0af811d019f3c9b3618666.svg",
+    "static/media/Bootstraplogo.svg": "/sidework/static/media/Bootstraplogo.7e9c39a4b427a4d5df3aef6dbf3524c3.svg",
     "static/media/wallpaper2.svg": "/sidework/static/media/wallpaper2.cabf8229d60cb9c93483.svg",
+    "static/media/wallpaperAboutUs.svg": "/sidework/static/media/wallpaperAboutUs.1e71203fc6ec618d64bd.svg",
+    "static/media/VBlogo.svg": "/sidework/static/media/VBlogo.4bbeed52c5c164412fce072f8243c909.svg",
+    "static/media/GmailLogo.svg": "/sidework/static/media/GmailLogo.83295a053394498a58d46b2029cbe4c6.svg",
+    "static/media/Pythonlogo.svg": "/sidework/static/media/Pythonlogo.42f87cb3c004a68af35276b967671a1c.svg",
     "index.html": "/sidework/index.html",
+    "static/media/ProfileLogo.svg": "/sidework/static/media/ProfileLogo.0aaa1b98cd1ad0c1750eb372272e72bd.svg",
     "static/media/wallpaper3.svg": "/sidework/static/media/wallpaper3.d8f6bc3ca205a064e944.svg",
+    "static/media/LinkedinLogo.svg": "/sidework/static/media/LinkedinLogo.4777bd0c906fc0260940952627e5df34.svg",
+    "static/media/Star.svg": "/sidework/static/media/Star.391ca648e44d4b3b49c5802f8603929a.svg",
+    "static/media/GithubLogo.svg": "/sidework/static/media/GithubLogo.ed5c35598f05174099a9e63503cbed1b.svg",
+    "static/media/Javascriptlogo.svg": "/sidework/static/media/Javascriptlogo.8e003be228681dc81bbf6fc9803c9c2b.svg",
     "static/media/menu.svg": "/sidework/static/media/menu.aad9faf92a14b8a0f822cd079983e5ce.svg",
-    "main.db79b31f.css.map": "/sidework/static/css/main.db79b31f.css.map",
-    "main.4b844839.js.map": "/sidework/static/js/main.4b844839.js.map",
+    "main.51d39eb7.css.map": "/sidework/static/css/main.51d39eb7.css.map",
+    "main.1680e737.js.map": "/sidework/static/js/main.1680e737.js.map",
     "787.3c5e7a93.chunk.js.map": "/sidework/static/js/787.3c5e7a93.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db79b31f.css",
-    "static/js/main.4b844839.js"
+    "static/css/main.51d39eb7.css",
+    "static/js/main.1680e737.js"
   ]
 }
