@@ -67,9 +67,9 @@ const AboutUs = () => {
     </div>
     {/* Profile 3 */}
     <div className='profileCards'>
-      <div className='profile'> <img className='profileimg' src="https://image.kpopmap.com/2019/01/VERIVERY-Faceus-member-profile-YongSeung.jpg"  alt="" /> </div>
-      <div className='name'>Kim Teahyung</div>
-      <div className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet amet fugit similique</div>
+      <div className='profile'> <img className='profileimg' src={TJ}  alt="" /> </div>
+      <div className='name'>TJ Gimenez</div>
+      <div className='description'>Constraint is the mother of creativity!</div>
 
 
       <div className='links'>
