@@ -5,8 +5,10 @@
     height: 100vh;
     background: no-repeat center / cover url(../images/wallpaper/wallpaper2.svg);
     box-sizing: border-box;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
 }
 
 
