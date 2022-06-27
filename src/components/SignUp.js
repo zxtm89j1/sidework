@@ -34,6 +34,7 @@ const SignUp = () => {
     //function for clearing the local storage
     const clearLocal = () => {
         localStorage.clear();
+        setOpenModal(false);
     }
 
 
