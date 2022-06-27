@@ -283,6 +283,10 @@
         margin-top: 5%;
         margin-bottom: 5%;
     }
+
+    .modalContainer {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 699px) {
@@ -333,6 +337,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .modalContainer {
+        width: 90%;
     }
 }
 
