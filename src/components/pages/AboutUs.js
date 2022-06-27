@@ -5,6 +5,8 @@ import github_logo from '../images/Aboutus/GithubLogo.svg';
 import gmail_logo from '../images/Aboutus/GmailLogo.svg';
 import linkedin_logo from '../images/Aboutus/LinkedinLogo.svg';
 import TJ from '../images/Aboutus/TJGimenez.png';
+import Nino from '../images/Aboutus/NinoAncheta.jpg';
+
 import '../styles/Aboutus.css'
 
 const AboutUs = () => {
@@ -17,11 +19,11 @@ const AboutUs = () => {
     <div className='profilecard'>
     {/* Profile 1 */}
     <div className='profileCards'>
-      <div className='profile'> <img className='profileimg' src="https://image.kpopmap.com/2019/01/VERIVERY-Faceus-member-profile-YongSeung.jpg"  alt="" /> </div>
+      <div className='profile'> <img className='profileimg' src={Nino}  alt="" /> </div>
       <div className='name'>Niño Ancheta</div>
       <div className='description'>A full stack developer always eager to learn!</div>
       <div className='links'>
-        <div className='Profilelogo'> <a href="https://github.com/Anchetanino" target="_blank" rel="noopener noreferrer">  
+        <div className='Profilelogo'> <a href="https://anchetanino.github.io/portfolio.github.io/" target="_blank" rel="noopener noreferrer">  
           <Tooltip title="Portfolio">
              <button> <img src={profile_logo} alt="Profile logo"/> </button>
           </Tooltip> </a>  </div>
@@ -29,15 +31,15 @@ const AboutUs = () => {
           <Tooltip title="Github">
             <button> <img src={github_logo} alt="Github logo"/> </button>
           </Tooltip> </a> </div>
-        <div className='Gmaillogo'><a href="mailto:" target="_blank" rel="noopener noreferrer"> 
+        <div className='Gmaillogo'><a href="mailto:ninoanchate12345@gmail.com" target="_blank" rel="noopener noreferrer"> 
           <Tooltip title="Email">
             <button> <img src={gmail_logo} alt="Gmail logo"/> </button>
           </Tooltip> </a> </div>
-        <div className='LinkedInlogo'><a href="https://github.com/Anchetanino" target="_blank" rel="noopener noreferrer">
+        <div className='LinkedInlogo'><a href="https://www.linkedin.com/in/nino-ancheta-b99a3a205/" target="_blank" rel="noopener noreferrer">
           <Tooltip title="LinkedIn"> 
             <button> <img src={linkedin_logo} alt="Linkedin logo"/> </button>
           </Tooltip>  </a></div>
-     </div> 
+     </div>
     </div>
 
     {/* Profile 2 */}
@@ -47,7 +49,7 @@ const AboutUs = () => {
       <div className='description'>A full stack developer always eager to learn!</div>
 
       <div className='links'>
-        <div className='Profilelogo'> <a href="https://github.com/Anchetanino" target="_blank" rel="noopener noreferrer">  
+        <div className='Profilelogo'> <a href="https://anchetanino.github.io/portfolio.github.io/" target="_blank" rel="noopener noreferrer">  
           <Tooltip title="Portfolio">
              <button> <img src={profile_logo} alt="Profile logo"/> </button>
           </Tooltip> </a>  </div>
@@ -55,11 +57,11 @@ const AboutUs = () => {
           <Tooltip title="Github">
             <button> <img src={github_logo} alt="Github logo"/> </button>
           </Tooltip> </a> </div>
-        <div className='Gmaillogo'><a href="mailto:" target="_blank" rel="noopener noreferrer"> 
+        <div className='Gmaillogo'><a href="mailto:ninoanchate12345@gmail.com" target="_blank" rel="noopener noreferrer"> 
           <Tooltip title="Email">
             <button> <img src={gmail_logo} alt="Gmail logo"/> </button>
           </Tooltip> </a> </div>
-        <div className='LinkedInlogo'><a href="https://github.com/Anchetanino" target="_blank" rel="noopener noreferrer">
+        <div className='LinkedInlogo'><a href="https://www.linkedin.com/in/nino-ancheta-b99a3a205/" target="_blank" rel="noopener noreferrer">
           <Tooltip title="LinkedIn"> 
             <button> <img src={linkedin_logo} alt="Linkedin logo"/> </button>
           </Tooltip>  </a></div>
